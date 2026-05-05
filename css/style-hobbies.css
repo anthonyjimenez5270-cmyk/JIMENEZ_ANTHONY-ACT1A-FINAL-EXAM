@@ -1,0 +1,144 @@
+.hobbies-header{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hobby {
+    background: #161B22;
+    border: 1px solid #30363D;
+    border-radius: 15px;
+    padding: 25px;
+    
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.hobby h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.hobby p {
+    color: #cccccc;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 25px; 
+    flex-grow: 0; 
+}
+
+
+.media-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 15px;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.hobby-card {
+    margin: 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hobby-card img, 
+.hobby-card video {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover img, 
+.hobby-card:hover video {
+    transform: scale(1.05);
+}
+
+.hobby-card figcaption {
+    display: none; 
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .hobbies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .hobby {
+        padding: 18px;
+    }
+
+    .hobby h2 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .hobby p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .hobbies-header {
+        padding: 20px 10px;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 10px;
+    }
+
+    .hobby {
+        padding: 15px;
+    }
+
+    .hobby h2 {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .hobby p {
+        font-size: 13px;
+    }
+
+    .hobby-card img,
+    .hobby-card video {
+        height: 180px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hobby h2 {
+        font-size: 14px;
+    }
+
+    .hobby p {
+        font-size: 12px;
+    }
+
+    .hobby-card img,
+    .hobby-card video {
+        height: 150px;
+    }
+}

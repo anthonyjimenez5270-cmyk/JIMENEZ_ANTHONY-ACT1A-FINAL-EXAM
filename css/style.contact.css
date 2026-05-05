@@ -1,0 +1,181 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D1117;
+    color: #E6EDF3;
+}
+.contact-section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #0D1117, #161B22);
+    border: 1px solid #30363D;
+    border-radius: 15px;
+}
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contact-section p {
+    text-align: center;
+    color: #9DA5B4;
+    margin-bottom: 30px;
+}
+/* CONTACT INFO */
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info a {
+    color: #00ADEF;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #30363D;
+    background: #161B22;
+    color: #E6EDF3;
+    resize: none;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #00ADEF;
+    box-shadow: 0 0 5px #00ADEF;
+}
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #00ADEF;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-form button:hover {
+    background: #008CBA;
+    box-shadow: 0 0 10px #00ADEF;
+}
+.gradient-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #00ADEF, #33C3FF);
+    margin: 10px auto 20px;
+    border-radius: 10px;
+}
+
+/* hide message first */
+.success-message {
+    opacity: 0;
+    transform: translateY(10px);
+    color: #33C3FF;
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.5s ease;
+}
+
+/* show once when form is valid (after clicking submit) */
+.contact-form:valid .success-message {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact-form:valid .success-message {
+    opacity: 1;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .contact-section {
+        margin: 50px 15px;
+        padding: 30px 25px;
+    }
+
+    .contact-section h1 {
+        font-size: 28px;
+    }
+
+    .contact-section p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact-section {
+        margin: 40px 10px;
+        padding: 25px 18px;
+        max-width: 95%;
+    }
+
+    .contact-section h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .contact-section p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-section {
+        margin: 30px 5px;
+        padding: 20px 12px;
+    }
+
+    .contact-section h1 {
+        font-size: 20px;
+    }
+
+    .contact-section p {
+        font-size: 13px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+        font-size: 13px;
+    }
+}

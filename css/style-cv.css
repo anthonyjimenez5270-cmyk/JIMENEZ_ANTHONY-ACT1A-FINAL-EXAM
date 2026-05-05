@@ -1,0 +1,152 @@
+.resume-container {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #0d1117; 
+}
+
+.resume-paper {
+    background: #0d1117;
+    color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    font-family: Arial, sans-serif;
+}
+
+.resume-header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.resume-section {
+    margin-top: 25px;
+}
+
+.resume-section h3 {
+    text-decoration: underline;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 150px 20px 1fr;
+    gap: 10px 0;
+    line-height: 1.6;
+}
+
+.resume-sig {
+    margin-top: 50px;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 40px;
+}
+
+a{
+    color: rgb(0, 89, 255);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .resume-container {
+        padding: 20px 10px;
+    }
+
+    .resume-paper {
+        padding: 35px 25px;
+        max-width: 95%;
+    }
+
+    .resume-header {
+        grid-template-columns: 120px 1fr;
+        gap: 20px;
+    }
+
+    .contact-info h1 {
+        font-size: 24px;
+    }
+
+    .resume-section h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .resume-container {
+        padding: 15px 8px;
+    }
+
+    .resume-paper {
+        padding: 25px 15px;
+        max-width: 100%;
+    }
+
+    .resume-header {
+        grid-template-columns: 100px 1fr;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+
+    .contact-info h1 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .resume-section {
+        margin-top: 18px;
+    }
+
+    .resume-section h3 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .info-grid {
+        grid-template-columns: 120px 15px 1fr;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    .resume-paper {
+        padding: 20px 12px;
+    }
+
+    .resume-header {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .contact-info h1 {
+        font-size: 18px;
+    }
+
+    .info-grid {
+        grid-template-columns: 100px 15px 1fr;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
